@@ -1,0 +1,18 @@
+{
+  "name": "co2-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd Client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "author": "Vincent Eurasto",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0"
+  }
+}
